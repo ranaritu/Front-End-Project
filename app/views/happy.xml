@@ -1,0 +1,27 @@
+<Alloy>
+	<Window class="container" statusBarStyle= "Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT">
+
+		<View class="profileHeader">
+			<Button id="back_button" class="topLeftButton headerButton" title="Back"/>
+			<Label id = "editProfile" class = "editProfile" text = "Edit Profile"></Label>
+			<Button id ="exit_button" class = "topRightButton headerButton">Done</Button>
+			<View id="profile_details_view"></View>
+		</View>
+		<View class ="profile_bottom_view">
+			<Label id = "pageNumber" class = "pageNumber" text="3 of 9" ></Label>
+			<Label id = "question" class = "profileQuestions" text="How happy are you in your relationship?" ></Label>
+			<Label id = "question2" class = "profileQuestions" text="How happy do you feel about your life?" ></Label>
+			<Slider id="slider" />
+			<Slider id="slider2" />
+			<Label id = "not_at_all" class ="sliderlabel" text ="Not at all"></Label>
+			<Label id = "very_happy" class ="sliderlabel" text ="Very Happy"></Label>
+			<Label id = "not_at_all2" class ="sliderlabel" text ="Not at all"></Label>
+			<Label id = "very_happy2" class ="sliderlabel" text ="Very Happy"></Label>
+
+		</View>
+		<View class ="footer_buttons_view">
+			<Button id ="next_button" class = "footer_next_button">NEXT</Button>
+		</View>>
+
+	</Window>
+</Alloy>

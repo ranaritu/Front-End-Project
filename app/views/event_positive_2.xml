@@ -1,0 +1,18 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Button id="cameraButton" class ="header_button topRightButton"></Button>
+			<Label class="questionLabel" id="questionLabel"
+				text="Take a picture" ></Label>
+			<Button id="nextPageButton" class="topRightButton headerButton" title="Save"></Button>
+		</View>
+		
+		<View class ="bottom_view">
+			<View id ='camera_view_wrapper'>
+				<ImageView id='profile_photo_view'></ImageView>
+			</View>
+		</View>	
+		
+		</Window>
+</Alloy>

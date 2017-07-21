@@ -1,0 +1,9 @@
+<Alloy>
+    <Window id="menuWindow" >
+    	<ScrollableView id = "filter_scroll">
+    	<View id ="switch_view">
+          </View>
+          
+         </ScrollableView> 
+    </Window>
+</Alloy>

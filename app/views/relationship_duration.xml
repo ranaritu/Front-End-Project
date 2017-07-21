@@ -1,0 +1,19 @@
+<Alloy>
+	<Window class="container" statusBarStyle= "Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT">
+
+		<View class="profileHeader">
+			<Button id="back_button" class="topLeftButton headerButton" title="Back"/>
+			<Label id = "editProfile" class = "editProfile" text = "Edit Profile"></Label>
+			<Button id ="exit_button" class = "topRightButton headerButton">Done</Button>
+			<View id="profile_details_view"></View>
+		</View>
+		<View class ="profile_bottom_view">
+			<Label id = "relation" class = "profileQuestions" text="When did you start dating?" ></Label>
+			<Label id = "pageNumber" class = "pageNumber" text="2 of 9" ></Label>
+			<Picker id="date_picker" type="Ti.UI.PICKER_TYPE_DATE"></Picker>
+		</View>
+		<View class ="footer_buttons_view">
+			<Button id ="next_button" class = "footer_next_button">NEXT</Button>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class="questionLabel" id="questionLabel"
+				text="Share something unexpected that happened today. How did that make you feel?" ></Label>
+			<Button id="nextPageButton" class="topRightButton headerButton" title="Next"></Button>
+		</View>
+		<View class="bottom_view">
+			<TextArea id="event_reason_textarea" class="bottom_view_textarea">
+				
+			</TextArea>
+		</View>
+	</Window>
+</Alloy>

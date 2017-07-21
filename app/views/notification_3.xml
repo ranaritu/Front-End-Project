@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="container">
+		<View class="header" id='emotion_header'>
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Cancel"/>
+			<Label class="questionLabel" id="questionLabel" text="How did you resolve your problem?" ></Label>
+			<Button id="nextPageButton" class="topRightButton headerButton" title="Done"/>
+			
+		</View>
+		<View class="bottom_view">
+			<TextArea id="reason_textarea" class="bottom_view_textarea">
+				
+			</TextArea>
+		</View>
+		
+	</Window>
+</Alloy>

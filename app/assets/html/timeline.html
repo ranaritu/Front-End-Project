@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  		<canvas id='customChart' width="300" height="500"></canvas>
+  	<script>
+    	var canvasId = 'customChart';
+		var canvasElement = document.getElementById("customChart");
+		canvasElement.width = document.body.offsetWidth;
+		var canvasWidth = canvasElement.width;
+		
+    	var events = [];
+    	
+		// Space between columns
+		
+		var rowMargin = 1;
+		var rowHeight = 60;
+		var rowLeftMargin = 90;
+		var rowMaxWidth = canvasWidth-rowLeftMargin;
+		// Minimum row width of half the max row width
+		var rowMinWidth = rowMaxWidth-(rowMaxWidth/2);
+		var rowTextOffsetX = 10;
+		var rowTextOffsetY = 5;
+		var rowTextFontSize = 13;
+		
+		
+		var himAdjectiveOffsetY = 12;
+		var himAdjectiveTextColor = "#252627";
+		
+		var dateOffsetX=5;
+		var dateOffsetY=rowHeight-5;
+		var dateTextFontSize = 12;
+		var dateTextColor = "#BDBEBF";
+    	
+    	// Dictionary of colors
+		var colors = {
+			"happy":"#FAB500",
+			"sad":"#49196C",
+			"anxious":"#7BAF36",
+			"upset":"#007796",
+			"angry":"#D20040",
+			"mixed":"#66390D"
+		};
+		
+    	var canvas = document.getElementById("customChart");
+    		
+    	/**
+    	 * Function to get the position where the user tapped at.
+    	 * We need this so that we know what event or insight the 
+    	 * user tapped on.
+    	 */
+		function getCursorPosition(e) {
+			var x;
+			var y;
+			if (e.pageX != undefined && e.pageY != undefined) {
+				x = e.pageX;
+				y = e.pageY;
+			}
+			else {
+				x = e.clientX + document.body.scrollLeft +
+				document.documentElement.scrollLeft;
+				y = e.clientY + document.body.scrollTop +
+				document.documentElement.scrollTop;
+			}
+			x -= canvas.offsetLeft;
+			y -= canvas.offsetTop;
+			return {x:x,y:y};
+		}
+		
+		/**
+		 * Adding an click event listener on the canvas.
+		 * This event listener computes the index of the row
+		 * based on the position of the user "tap". Then fires
+		 * the appropriate event or insight event for the 
+		 * regular application (refer to controllers/index.js)
+		 * for more details.
+		 */
+		canvas.addEventListener('click',function(e){
+			window.console.log(e);
+			var xy = getCursorPosition(e);
+			window.console.log(xy);
+			var y = xy.y;
+			// Math to get the index of the event
+			var eventNumber = Math.floor(y/rowHeight);
+			if(typeof(Ti)!=="undefined"){
+				var event = events[eventNumber];
+				if (event.type === 'event'){
+					Ti.App.fireEvent('app:timelineEventClick', {eventId:event.id });
+				}
+				else if(event.type === 'insight'){
+					Ti.App.fireEvent('app:timelineInsightClick', {insightId:event.id });
+				}
+			}
+		});
+    	function plotTimeline(data){
+    		var maxWordCount = data.max_word_count;
+    		events = data.events;
+    		var eventCount = events.length;
+    		var event = {};
+    		// Getting canvas context;
+    		var ctx = canvas.getContext("2d");
+    		
+    		/**
+    		 * The size of the canvas has to be changed to match the number of events.
+    		 */
+    		canvas.height = eventCount*(rowHeight+rowMargin);
+    		
+    		// Making the canvas blank in case something was drawn before.
+			ctx.fillStyle = "#FFFFFF";
+    		ctx.fillRect(0,0,canvas.width,canvas.height);
+    		/**
+    		 * Drawing each row, either insight or event.
+    		 */
+			for(var i=0; i<eventCount; i++){
+				event = events[i];
+				var color = "#007794"; // insight color by default
+				if(event.type === 'event'){
+					color = colors[event.emotion];
+				}
+				if(color===undefined) return; // if the color doesn't exist, break.
+
+				var currentRowY = i*rowHeight;
+				
+				// Color rectangle
+				ctx.fillStyle = color;
+				
+				// Computing the row size
+				var eventRowSize = rowMaxWidth;
+				if(event.type === 'event' && maxWordCount !== 0){
+					eventRowSize = ((rowMaxWidth-rowMinWidth)*event.word_count/maxWordCount)+rowMinWidth;
+				}
+				ctx.fillRect(rowLeftMargin,currentRowY,eventRowSize,rowHeight);
+				
+				// Adjective for me, or insight
+				var rectangleText = (event.type==="event")?event.me_adj:"Insight\n"+event.data;
+				ctx.fillStyle = "#FFFFFF";
+				ctx.font = rowTextFontSize+"px Avenir";
+				ctx.textBaseline = 'top';
+				ctx.textAlign = 'left';
+				ctx.fillText(rectangleText,rowLeftMargin+rowTextOffsetX,currentRowY+rowTextOffsetY);
+				
+				if(event.type === 'event'){
+					// Adjective for him
+					ctx.fillStyle = himAdjectiveTextColor;
+					ctx.font = rowTextFontSize+"px Avenir";
+					ctx.textBaseline = 'top';
+					ctx.textAlign = 'center';
+					ctx.fillText(event.you_adj,rowLeftMargin/2,currentRowY+himAdjectiveOffsetY);
+				}
+				
+				// Date
+				ctx.fillStyle = dateTextColor;
+				ctx.font = dateTextFontSize+"px Avenir";
+				ctx.textBaseline = 'bottom';
+				ctx.textAlign = 'left';
+				ctx.fillText(event.date,dateOffsetX,currentRowY+dateOffsetY);
+				
+				// Separation line
+				ctx.fillStyle = "#A2A3A4";
+				ctx.fillRect(0,currentRowY+rowHeight-1,canvasWidth,1);
+			}
+    	}
+        	
+    </script>
+    
+  
+  </body>
+</html>

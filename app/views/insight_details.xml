@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class="questionLabel" text="Insight" ></Label>
+		</View>
+		<View class="bottom_view">
+			<Label id="dateLabel" text="Date" ></Label>
+			<Label id="insightLabel" text="Insight data" ></Label>
+		</View>
+	</Window>
+</Alloy>

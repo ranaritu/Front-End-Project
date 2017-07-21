@@ -1,0 +1,120 @@
+"#scrollview":{
+	showVerticalScrollIndicator:"true",
+	showHorizontalScrollIndicator:"true"
+},
+"#cameraButton":{
+	backgroundImage:"/img/icons/Camera-Line.png",
+	top: "155dp",
+	width:24,
+	height:20,
+	right: 20,
+},
+
+"#previousPageButton":{
+	backgroundImage:"/img/icons/home.png",	
+	width:24,
+	height:22,
+}
+
+"#camera_view_wrapper":{
+	layout:'vertical',
+	top:10,
+	width:160,
+	height:160,
+	right:75,
+}
+
+"#profile_photo_view":{
+	right:35,
+	top: 40,
+	width:120,
+	height:120,
+	borderRadius:60,
+}
+"#data_buttons":{
+	layout:"horizontal",
+	top:"15dp",
+	height:"35dp",
+	width:Ti.UI.SIZE,
+},
+
+"#herdata":{
+	borderRadius:5,
+	width:100,
+	color:"white",
+	left: 20,
+	backgroundColor:"797873",
+}
+
+"#hisdata":{
+	borderRadius:5,
+	borderColor:"797873",
+	width:100,
+	color:"797873",
+	right: 20,
+}
+
+"#page_title":{
+	top:20,
+},
+
+".header":{
+	backgroundColor:"#bf1f4a",
+	height:"180dp",
+},
+".lineView" : {
+	layout:'vertical',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.FILL,
+	left:10,
+	right:10,
+},
+".container" : {
+  layout:'vertical',
+},
+"#exit_button":{
+	left:140,
+}
+"Label" : {
+    top:10,
+    textAlign:'center',
+    font: {
+        fontWeight:'bold',
+        fontSize:18,
+        fontFamily:"Muli",
+    },
+    color: '#000',
+    height:Ti.UI.SIZE
+},
+"#details_view":{
+	//textAlign:'left',
+	layout:'vertical',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE
+}
+
+".bottom_view":{
+	layout:'vertical',
+	top:0,
+	bottom:0
+},
+
+".dataTitleLabel":{
+	left:0,
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	font: {
+        fontWeight:'regular',
+        fontSize:14,
+        fontFamily:"Muli",
+          },
+},
+".dataLabel":{
+	left:0,
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	font: {
+        fontSize:14,
+		fontFamily:"Avenir"
+    },
+},

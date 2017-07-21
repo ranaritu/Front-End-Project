@@ -1,0 +1,47 @@
+
+"#menuWindow" : {
+  backgroundColor:"black",
+  width:320, // Set the width of the sliding window to avoid cut out from animation,
+  height:240,
+  top:150
+},
+
+"#filter_scroll":{
+	showPagingControl:'true',
+
+}
+
+"#switch_view":{
+	layout:'vertical',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE
+}
+
+
+".line_view" : {
+	layout:'horizontal',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.FILL,
+	left:10,
+	right:10,
+	top:0
+},
+".title_label":{
+	color:'#BDBDBD',
+	left:0,
+	height:Ti.UI.SIZE,
+	width:150,
+	font: {
+        fontWeight:'bold',
+        fontSize:14,
+        fontFamily:"Avenir"
+    },
+},
+".emotion_switch":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	font: {
+        fontSize:14,
+		fontFamily:"Avenir"
+    },
+},

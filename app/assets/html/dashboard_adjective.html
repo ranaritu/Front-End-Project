@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    	function plotAdjectiveChart(adjectives){
+    		var canvasId = 'customChart';
+    		var canvasElement = document.getElementById("customChart");
+    		var fontSize = 13;
+    		canvasElement.width = document.body.offsetWidth;
+    		var canvasWidth = canvasElement.width;
+    		var canvasHeight = canvasElement.height;
+    		
+    		var numberOfColumns = 2;
+    		var numberOfRows = 3;
+    		
+    		// Space between columns
+    		var columnMargin = 10;
+    		
+    		var rowMargin = 3;
+    		
+    		// Computing column width
+    		var columnWidth = canvasWidth/numberOfColumns - columnMargin*(numberOfColumns-1);
+    		var rowHeight = canvasHeight/numberOfRows - rowMargin*(numberOfRows-1);
+    		
+    		// Getting canvas context;
+    		var ctx = canvasElement.getContext("2d");
+			
+			// Limit for the loop (number of adjectives displayed)
+			var limit = (adjectives.length<numberOfColumns*numberOfRows)?adjectives.length:numberOfColumns*numberOfRows;
+			for(var i=0; i<limit; i++){
+				// Getting the column index.
+				var columnIndex = i%numberOfColumns;
+				var currentColumnX = columnIndex*columnWidth;
+
+				// If not first column, the column margin must be added.
+				if(i!==0){
+					currentColumnX += columnIndex*columnMargin;
+				}
+				
+				var rowIndex = Math.floor(i/numberOfColumns);
+				
+				// Color rectangle
+				ctx.strokeStyle = "#c79000";
+				ctx.strokeRect(currentColumnX,rowIndex*(canvasHeight/numberOfRows),columnWidth,rowHeight);
+				
+				// Bottom text
+				ctx.fillStyle = "#c79000";
+				ctx.font = fontSize+"px Avenir";
+				//ctx.textBaseline = 'middle';
+				ctx.textAlign = 'center';
+				
+				// Writing percentage in the center of the current column
+				
+				ctx.fillText(adjectives[i].trait,currentColumnX+columnWidth/2,(rowIndex+0.5)*(canvasHeight/numberOfRows));
+				
+			}
+    	}
+    </script>
+  </head>
+  <body>
+  		<canvas id='customChart' width="280" height="80"></canvas>
+  </body>
+</html>

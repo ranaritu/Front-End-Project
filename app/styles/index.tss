@@ -1,0 +1,127 @@
+".container": {
+    layout:'vertical',
+},
+"#dashboard_button":{
+	top:25,
+	left:50,
+	backgroundImage:"/img/icons/barChart.png",
+	width:24,
+	height:24,
+}
+	
+"#profile_button":{
+	top:25,
+	left:10,
+	backgroundImage:"/img/icons/circledUserFemale.png",	
+	width:24,
+	height:24,
+}
+
+"#notification_button":{
+	top:25,
+	right:10,		
+	backgroundImage:"/img/icons/notification_bell.png",
+	width:24,
+	height:24,
+}
+
+"#filter_button":{
+	backgroundImage:"/img/icons/filter.png",
+	top: 27,
+	width:24,
+	height:24,
+	right:50,
+	toggle:"false",
+}
+
+/*
+"#partner_details_view":{
+	layout:'horizontal',
+	height:"65dp",
+	width:Ti.UI.SIZE,
+	top:"0dp",
+	left:0,
+},
+
+"#profile_details_view":{
+	//backgroundColor: "#bf1f4a",
+	layout: 'vertical',
+	top:"0dp",
+	height:"95dp",
+	width:Ti.UI.SIZE,
+	left:0,
+},
+
+"#action_buttons_view":{
+	//backgroundColor: "#bf1f4a",
+	layout:"horizontal",
+	top:"0dp",
+	height:"70dp",
+	width:Ti.UI.SIZE
+	
+}
+".action_button":{
+	top:"-50dp",
+	left:80,
+	width:"100dp",
+	height:"40dp",
+	backgroundColor: "#797873",
+	color: "white",
+}
+"#add_insight_button":{
+	left:2,
+}
+/**"#eventList":{
+	top:140,
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE
+}
+**/
+".timeline_container_view":{
+	backgroundColor:"white",
+	borderColor:"#D7D7D7",
+	layout:"vertical",
+	height:Ti.UI.SIZE,
+}
+
+"#page_title":{
+	top:25,
+}
+
+"#action_buttons_view":{
+	//backgroundColor: "#f3f0e7",
+	layout:"horizontal",
+	top:"0dp",
+	height:"40dp",
+	width:Ti.UI.SIZE
+	
+}
+
+".action_button":{
+	top:"0dp",
+	left:50,
+	width:"100dp",
+	height:"30dp",
+	backgroundColor: "#797873",
+	color: "white",
+}
+
+"#add_insight_button":{
+	left:1,
+}
+"#partner_details_view":{
+	//backgroundColor: "#f3f0e7",
+	layout:'vertical',
+	height:"66dp",
+	width:Ti.UI.SIZE,
+	top:-50,
+},
+
+"#profile_details_view":{
+	backgroundColor: "#f3f0e7",
+	layout: 'vertical',
+	top:"0dp",
+	height:"95dp",
+	width:Ti.UI.SIZE,
+
+},

@@ -1,0 +1,27 @@
+<Alloy>
+	<Window class="container">
+		
+			
+		<View id="page_header">
+			<Button id="timeline_button" class='left_header_button' title='Timeline'></Button>
+			
+			<Label id="page_title">Dashboard</Label>
+		</View>
+		
+               
+		<View class='traits_container_view dashboard_container_view'>
+			<Label>My most frequent traits</Label>
+			<WebView id='myTraitsChartView' class="trait_web_view" url='/html/dashboard_adjective.html'></WebView>
+			<Label>His most frequent traits</Label>
+			<WebView id='hisTraitsChartView' class="trait_web_view" url='/html/dashboard_adjective.html'></WebView>
+		</View>
+		
+		
+		<View class='chart_container_view dashboard_container_view'>
+			<Label class='chart_title_label' text="Emotions"></Label>
+			<WebView id='emotionChartView' class="chart_web_view" url='/html/dashboard.html'></WebView>
+		</View>
+		
+		
+	</Window>
+</Alloy>

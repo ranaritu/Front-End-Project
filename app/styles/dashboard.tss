@@ -1,0 +1,45 @@
+
+".container" : {
+	backgroundColor:"#EAEBED",
+	layout:"vertical"
+}
+".traits_container_view":{
+	layout:"vertical",
+	height:300
+}
+
+".trait_web_view":{
+	showScrollbars:'false',
+	height:Ti.UI.SIZE,
+	disableBounce:"true"
+}
+"Label":{
+	font: {
+        fontSize:14,
+		fontFamily:"Avenir"
+    },
+}
+".dashboard_container_view":{
+	backgroundColor:"white",
+	borderColor:"#D7D7D7",
+	borderWidth:2,
+	top:15,
+	left:10,
+	right:10,
+	layout:"vertical",
+	height:Ti.UI.SIZE
+}
+
+".chart_title_label":{
+	top:5,
+	color: "#7D7D7D",
+	left:5
+}
+
+".chart_web_view":{
+	showScrollbars:'false',
+	disableBounce:"true",
+	height:Ti.UI.SIZE
+}
+
+

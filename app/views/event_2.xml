@@ -1,0 +1,23 @@
+<Alloy>
+	<Window class="container">
+		<View class="header" id='emotion_header'>
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Button visible="false" id='cameraButton' class="topRightButton headerButton"></Button>
+			<Label class="questionLabel" id="questionLabel" text="Why do you feel ...?" ></Label>
+			<Button id="nextPageButton" class="topRightButton headerButton" title="Next"/>
+		</View>
+		
+		<View class="bottom_view">
+			<View id ='camera_view_wrapper'>
+				<ImageView id='event_positive_photo_view'></ImageView>
+			</View>
+			
+			<TextArea id="event_reason_textarea" class="bottom_view_textarea">
+				
+			</TextArea>
+			<!-- picture button that is hidden by default-->
+			
+		</View>
+		
+	</Window>
+</Alloy>

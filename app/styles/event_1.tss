@@ -1,0 +1,44 @@
+
+".emotion_view":{
+	layout:"vertical",
+	
+}
+".emotion_view_row":{
+	layout:"horizontal",
+	height:Ti.UI.SIZE,
+	top:"4%",
+}
+".emotion_button":{
+	left:"4%",
+	borderWidth:1,
+	borderColor: '#bbb',
+	width:"80dp",
+	height:"150dp",
+	top:"4%",
+	font:{
+		fontFamily:"Muli"
+	}
+}
+
+".header": {
+	backgroundImage:"/img/add_event/01_AddEvent.jpg",
+}
+
+"#emotion_happy":{
+	backgroundImage:"/img/add_event/01_Happy.jpg",
+}
+"#emotion_sad":{
+	backgroundImage:"/img/add_event/01_Sad.jpg",
+}
+"#emotion_anxious":{
+	backgroundImage:"/img/add_event/01_Anxious.jpg",
+}
+"#emotion_upset":{
+	backgroundImage:"/img/add_event/01_Upset.jpg",
+}
+"#emotion_angry":{
+	backgroundImage:"/img/add_event/01_Angry.jpg",
+}
+"#emotion_mixed":{
+	backgroundImage:"/img/add_event/01_MixedEmo.jpg",
+}

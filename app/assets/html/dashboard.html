@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	
+    <script>
+    	function plotCustomChart(emotionNames, occurrences){
+    		
+    		var canvasId = 'customChart';
+    		var canvasElement = document.getElementById("customChart");
+    		canvasElement.width = document.body.offsetWidth;
+    		var canvasWidth = canvasElement.width;
+    		var canvasHeight = canvasElement.height;
+    		var ctx = canvasElement.getContext("2d");
+    		// It's assumed that both arrays are of same length
+    		if(emotionNames.length!==occurrences.length) return;
+    		
+    		var emotionCount = emotionNames.length;
+    		
+    		// Getting the sum
+    		var sum = 0;
+    		for(var i=0; i<emotionCount; i++){
+    			sum+=occurrences[i];
+    		}
+    		var percentages = [];
+    		for(var i=0; i<emotionCount; i++){
+    			percentages.push(Math.round((occurrences[i]/sum)*100));
+    		}
+    		
+    		
+    		// Must leave some space at the bottom for text
+    		var rectangleMaxHeight = canvasHeight-20;
+    		
+    		var percentageFontSize = 13;
+    		var percentageY = rectangleMaxHeight-5;
+    		
+    		
+    		// Space between columns
+    		var columnMargin = 10;
+    		
+    		// Computing column width
+    		var emotionColumnWidth = (canvasWidth-columnMargin*(emotionCount-1))/emotionCount;
+    		Ti.API.info("dashboard column width: "+emotionColumnWidth);
+    		
+    		// Getting canvas context;
+    		
+    		
+    		// Dictionary of colors
+    		var colors = {
+    			"happy":"#FAB500",
+    			"sad":"#49196C",
+    			"anxious":"#7BAF36",
+    			"upset":"#007796",
+    			"angry":"#D20040",
+    			"mixed":"#66390D"
+    		};
+			
+			for(var i=0; i<emotionCount; i++){
+				var color = colors[emotionNames[i]];
+				if(color===undefined) return; // if the color doesn't exist, break.
+				// Computing column height
+				var emotionColumnHeight = rectangleMaxHeight*percentages[i]/100;
+				
+				var currentColumnX = i*emotionColumnWidth;
+				
+				// If not first column, the column margin must be added.
+				if(i!==0){
+					currentColumnX += i*columnMargin;
+				}
+				
+				// Background rectangle
+				ctx.fillStyle = "#E7E7E9";
+				ctx.fillRect(currentColumnX,0,emotionColumnWidth,rectangleMaxHeight);
+				
+				// Color rectangle
+				ctx.fillStyle = color;
+				ctx.fillRect(currentColumnX,rectangleMaxHeight-emotionColumnHeight,emotionColumnWidth,emotionColumnHeight);
+				
+				// Bottom text
+				ctx.fillStyle = "#FFFFFF";
+				ctx.font = percentageFontSize+"px Avenir";
+				ctx.textBaseline = 'bottom';
+				ctx.textAlign = 'center';
+				
+				// Writing percentage in the center of the current column
+				window.console.log(percentages[i]+'%',currentColumnX+emotionColumnWidth/2,percentageY);
+				ctx.fillText(percentages[i]+'%',currentColumnX+emotionColumnWidth/2,percentageY);
+				
+				// Writing emotion name below the column
+				ctx.fillStyle = "#898989";
+				ctx.fillText(emotionNames[i],currentColumnX+emotionColumnWidth/2,canvasHeight);
+			}
+    	}
+    </script>
+  </head>
+  <body>
+  		<canvas id='customChart' width="520" height="150"></canvas>
+  </body>
+</html>

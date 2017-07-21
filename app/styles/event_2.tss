@@ -1,0 +1,33 @@
+
+".container" : {
+  
+}
+
+"#event_reason_textarea" : {
+	backgroundColor:"#f3f0e7"
+}
+
+"#cameraButton":{
+	backgroundImage:"/img/icons/camera_0.png",
+	top: 110,
+	width:24,
+	height:20,
+	right: 20,
+
+},
+
+"#event_positive_photo_view":{
+	right:35,
+	top: 40,
+	width:120,
+	height:120,
+	//borderRadius:60,
+}
+
+"#camera_view_wrapper":{
+	layout:'vertical',
+	top:10,
+	width:160,
+	height:160,
+	
+}

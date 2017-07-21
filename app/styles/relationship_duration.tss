@@ -1,0 +1,22 @@
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+
+"#relation":{
+	top: 40,
+	font:{
+		fontWeight:'regular',
+	},
+},
+
+"#date_picker":{
+	backgroundColor:'transparent',
+	Top:100,
+	width: Ti.UI.FILL,
+	selectionIndicator:true, //This is the blue translucent window (on iOS) that indicates the current selection
+	height:Titanium.UI.SIZE
+}

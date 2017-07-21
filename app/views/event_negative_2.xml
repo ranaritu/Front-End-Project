@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class="questionLabel" id="questionLabel"
+				text="Write three positive things about your life." ></Label>
+			<Button id="nextPageButton" class="topRightButton headerButton" title="Next"></Button>
+		</View>
+		<ScrollView class="bottom_view">
+			<TextField id="positive_thing_1_field" class='positive_thing_field' hintText="Type here"></TextField>
+			<TextField id="positive_thing_2_field" class='positive_thing_field' hintText="Type here"></TextField>
+			<TextField id="positive_thing_3_field" class='positive_thing_field'  hintText="Type here"></TextField>
+		</ScrollView>
+	</Window>
+</Alloy>

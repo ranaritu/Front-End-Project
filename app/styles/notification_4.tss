@@ -1,0 +1,11 @@
+
+".container" : {
+  
+}
+"#reason_textarea" : {
+	backgroundColor:"#f2f0e8"
+}
+
+"#emotion_header":{
+	backgroundImage:"/img/event_screens/07 Unresolved.jpg",
+},

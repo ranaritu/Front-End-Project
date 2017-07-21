@@ -1,0 +1,8 @@
+
+"#emotion_header":{
+	backgroundImage:"/img/event_screens/06 Resolved.jpg",
+},
+
+"#reason_textarea": {
+	backgroundColor:"#f2f0e8",
+}

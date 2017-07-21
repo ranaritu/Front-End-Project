@@ -1,0 +1,5 @@
+".bottom_view":{
+	layout:"vertical",
+	height:Ti.UI.SIZE,
+	contentHeight:'auto',
+}

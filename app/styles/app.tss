@@ -1,0 +1,227 @@
+"Window": {
+	backgroundColor: "#f2f0e8"
+}
+
+".header": {
+	backgroundColor: "#0E355F",
+	height: "150dp",
+	top: 0
+}
+
+".profileHeader":{
+	backgroundColor: "#bf1f4a",
+	height: "60dp",
+	top: 0
+},
+".editProfile":{
+	color: "white",
+	top: 25,
+	font: {
+		fontWeight: 'regular',
+		fontSize: 16,
+		fontFamily: "Muli"
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+
+".profileTextfield":{
+	layout: 'vertical',
+	width: 300,
+	height: 35,
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: "#91908a",
+	backgroundColor: "f3f0e7",
+	font:{
+		fontWeight: 'regular',
+		fontSize: 14,
+		fontFamily: "Muli"
+	}
+}
+"#page_header":{
+	backgroundColor: "#1C1C1C",
+	height: "66dp",
+	top: 0,
+	color: "white"
+}
+
+"#page_title":{
+	top: "20dp",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "white",
+	font: {
+		fontWeight: 'bold',
+		fontSize: 18
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+".left_header_button":{
+	left: 10,
+	color: "white",
+	top: "20dp",
+	font:{
+		fontWeight: 'regular',
+		fontFamily: "Muli"
+	}
+}
+
+".bottom_view":{
+	top: "130dp",
+	bottom: 0,
+	backgroundColor: "#F3F0E8"
+}
+
+".profile_bottom_view":{
+	top: "70dp",
+	bottom: 0,
+	backgroundColor: "#F3F0E8"
+}
+".headerButton":{
+	top: 20,
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	color: 'white',
+	font:{
+		fontWeight: 'regular',
+		fontFamily: "Muli"
+	}
+}
+".topRightButton":{
+	right: 20
+}
+".topLeftButton":{
+	left: 20
+}
+".questionLabel":{
+	top: 60,
+	textAlign: 'center',
+	font: {
+		fontWeight: 'regular',
+		fontSize: 18,
+		fontFamily: "Georgia",
+		fontStyle: "italic"
+	},
+	color: 'white',
+	height:Ti.UI.SIZE,
+	width: "85%"
+}
+"TextArea":{
+	borderWidth: 2,
+	borderColor: '#bbb',
+	borderRadius: 5,
+	width:Ti.UI.FILL,
+	font:{
+		fontWeight: 'regular',
+		fontFamily: "Muli"
+	}
+}
+".bottom_view_textarea":{
+	borderWidth: 0,
+	top: 0,
+	height: Ti.UI.FILL,
+	color: "#91908a",
+	font:{
+		fontWeight: 'regular',
+		fontSize: 20,
+		fontFamily: "Muli"
+	}
+}
+
+".positive_thing_field":{
+	height: "50dp",
+	borderColor: "#B3B4AF",
+	borderWidth: 0,
+	width:Ti.UI.FILL,
+	top: "10dp",
+	backgroundColor: "#fcfcfa",
+	color: "#91908a",
+	left: "20dp",
+	right: "20dp",
+	bottom: "10dp",
+	paddingLeft: "20dp",
+	font:{
+		fontFamily: "Muli",
+		fontWeight: 'regular'
+	}
+}
+
+
+".footer_buttons_view":{
+	color: "white",
+	backgroundColor: '#797873',
+	height: '50',
+	bottom: 0,
+	width: Titanium.UI.FILL,
+	font:{
+		fontFamily: "Muli",
+		fontWeight: 'regular'
+	}
+},
+
+
+".footer_next_button":{
+	color: "white",
+	//right: 40,
+	width: 50,
+	bottom: 10,
+	height: Titanium.UI.SIZE,
+	font:{
+		fontFamily: "Muli",
+		fontWeight: 'regular'
+	}
+},
+
+".pageNumber":{
+	top: 10,
+	font:{
+		fontFamily: "Muli",
+		fontWeight: 'regular',
+		fontSize: 12
+	}
+},
+
+".profileQuestions":{
+	textAlign: 'center',
+	layout: 'vertical',
+	width: '80%',
+	height: Titanium.UI.SIZE,
+	font:{
+		fontFamily: "Muli",
+		fontWeight: 'regular',
+		fontSize: "18"
+	}
+}
+"#textArea":{
+	layout: 'vertical',
+	suppressReturn: 'false',
+	borderWidth: "2",
+	borderColor: "#bbb",
+	textAlign: "left",
+	top: "95",
+	width: "100%",
+	height: Titanium.UI.SIZE,
+	hintText: 'TYPE YOUR ANSWER HERE',
+	font: {
+		fontFamily: "Muli",
+		fontWeight: 'light',
+		fontSize: 14
+	}
+},
+
+"#profile_details_view":{
+	layout: 'horizontal',
+	top: 40,
+	height: 100,
+	width: 150
+},
+".profile_lineView": {
+	layout: 'vertical',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.FILL,
+	left: 10,
+	right: 10
+},
+
+

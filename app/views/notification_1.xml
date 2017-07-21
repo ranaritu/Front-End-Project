@@ -1,0 +1,20 @@
+<Alloy>
+		
+	<Window class="container">
+		<View class="header">
+			<Button id="back_button" class="topLeftButton headerButton" />
+			<Label id="page_title">Notifications</Label>
+		
+		</View>
+	
+		<View class="bottom_view">
+			<ScrollView id = "scrollview">
+			<View id='details_view'></View>
+			<View id ='button_view'></View>
+			</ScrollView>
+		</View>
+				
+		    
+		
+	</Window>
+</Alloy>

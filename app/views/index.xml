@@ -1,0 +1,28 @@
+<Alloy>
+	<Collection src="event"></Collection>
+	<Window class="container">
+		<View id="page_header">
+			<Button id="dashboard_button" class='left_header_button'></Button>
+			<Label id="page_title">Timeline</Label>
+			<Button id="filter_button"	class= 'right_header_button'></Button>
+			<Button id="profile_button" class='left_header_button'></Button>
+			<Button id="notification_button" class='right_header_button'></Button>
+			
+		</View>
+		<View id="profile_details_view">
+			
+		</View>
+		<View id="partner_details_view"></View>
+		<View id="action_buttons_view">	
+			<Button id="add_event_button" class="action_button">Add Event</Button>
+			<Button id="add_insight_button" class="action_button">Add Insight</Button>
+		
+		</View>
+		
+		<View class='timeline_container_view'>
+			<WebView id='timelineView' class="timeline_view" url='/html/timeline.html'></WebView>
+		
+		</View>
+	
+	</Window>
+</Alloy>

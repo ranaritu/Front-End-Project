@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class="questionLabel" text="How are you feeling overall?" ></Label>
+		</View>
+		<View class="emotion_view bottom_view" id="emotion_view">
+			<View class="emotion_view_row" id="emotion_view_row_1">
+				<Button id="emotion_happy" class="emotion_button" title="HAPPY"/>
+				<Button id="emotion_sad" class="emotion_button" title="SAD"/>
+				<Button id="emotion_anxious" class="emotion_button" title="ANXIOUS"/>
+			</View>
+			<View class="emotion_view_row" id="emotion_view_row_2">
+				<Button id="emotion_upset" class="emotion_button" title="UPSET"/>
+				<Button id="emotion_angry" class="emotion_button" title="ANGRY"/>
+				<Button id="emotion_mixed" class="emotion_button" title="MIXED"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>
+

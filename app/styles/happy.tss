@@ -1,0 +1,55 @@
+
+"#slider":{
+	layout: 'vertical',
+	top:100,
+	 min:1,
+	 max:100,
+	 width:"90%",
+	//viewShadowColor:"#bf1f4a",
+		/*  
+	  setBorderColor:"green",
+	  setBorderRadius:20,
+	  setBorderwidth:10,*/
+}
+
+"#slider2":{
+	layout: 'vertical',
+	top:230,
+	 min:1,
+	 max:100,
+	 width:"90%",
+	
+}
+".sliderlabel":{
+	color:'#797873',
+	font:{
+		fontWeight:'regular',
+		fontFamily:"Muli"	
+	},
+}
+
+"#not_at_all":{
+	top:130,
+	left:10,
+}
+"#very_happy":{
+	top:130,
+	right:10,
+}
+
+"#question":{
+	top:40,
+}
+"#question2":{
+	top:170,
+}
+
+"#not_at_all2":{
+	top:260,
+	left:10,
+}
+
+"#very_happy2":{
+	top:260,
+	right:10,
+}

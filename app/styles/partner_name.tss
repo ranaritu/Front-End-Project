@@ -1,0 +1,18 @@
+
+"#question1":{
+	top:30,
+}
+
+"#pname":{
+	top:80,
+	height:35,
+}
+
+"#question2":{
+	top:130,
+}
+
+"#page":{
+	top:180,
+	height:35,
+}

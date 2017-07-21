@@ -1,0 +1,27 @@
+  
+"#next_button":{
+	layout: 'vertical',
+	left:200,
+	top:400,
+	width: 50,
+	height: 50,
+	
+},
+
+
+"#exit_button":{
+	left: 40,
+	layout: 'vertical',
+	top:400,
+	width: 50,
+	height: 50,
+	
+},
+"#back_button":{
+	left: 120,
+	layout: 'vertical',
+	top:400,
+	width: 50,
+	height: 50,
+	
+},

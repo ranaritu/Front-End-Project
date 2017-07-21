@@ -1,0 +1,13 @@
+
+".container" : {
+  
+}
+".bottom_view":{
+	layout:"vertical",
+	height:Ti.UI.SIZE,
+	contentHeight:'auto',
+}
+
+".header": {
+	backgroundImage:"/img/event_screens/04_PositiveHER.jpg",
+}

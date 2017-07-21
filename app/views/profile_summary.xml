@@ -1,0 +1,26 @@
+<Alloy>
+	<Window class="container" statusBarStyle= "Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT">
+
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton"/>
+			<Button id="editButton" class="topRightButton headerButton" title="Edit"></Button>
+			<Button id="cameraButton" class ="header_button"></Button>
+			<Label id="page_title">Profile</Label>
+			<View id ='camera_view_wrapper'>
+				<ImageView id='profile_photo_view'></ImageView>
+			</View>
+		</View>
+		<View class="bottom_view">
+			<View id ="data_buttons">
+				<Button id ="herdata" title ="Me"></Button>
+				<Button id ="hisdata" title ="Him"></Button>
+
+			</View>
+			<ScrollView id = "scrollview">
+				<View id='details_view'></View>
+			</ScrollView>
+		</View>
+
+	</Window>
+</Alloy>
+"

@@ -1,0 +1,49 @@
+
+".bottom_view":{
+	top:"70dp",
+	layout:"vertical",
+	height:Ti.UI.SIZE,
+	contentHeight:'auto',
+}
+
+"#addLineButton":{
+	right:10,
+	backgroundImage:"/img/icons/pluse.png",
+	//top:150,
+	width:25,
+	height:25,
+	//width:Ti.UI.SIZE,
+	//height:Ti.UI.SIZE,
+}
+
+".delete_line_button":{
+	backgroundImage:"/img/icons/minus.png",
+	//top:10,
+	right:10,
+	width:30,
+	height:30,
+	color:'black',
+},
+'.lineView':{
+	layout:'horizontal',
+	height:Ti.UI.SIZE
+}
+
+/*'.positive_thing_field':{
+	left:0,
+	right:60,
+}
+*/
+
+".positive_thing_field":{
+	height: "35dp",
+	borderColor: "#fcfcfa",
+	borderWidth: 0,
+	
+}
+
+/*'delete_line_button':{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE
+}
+*/

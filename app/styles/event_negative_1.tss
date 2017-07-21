@@ -1,0 +1,8 @@
+
+"Button":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE
+}
+".header": {
+	backgroundImage:"/img/event_screens/03_Unexpected.jpg",
+}

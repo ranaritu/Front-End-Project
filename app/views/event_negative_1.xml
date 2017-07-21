@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class="questionLabel" text="What is the right thing to do at this time?" ></Label>
+			<Button id="nextPageButton" class="topRightButton headerButton" title="Next"></Button>
+		</View>
+		<View class="bottom_view">
+			<TextArea id="event_reason_textarea" class="bottom_view_textarea">
+				
+			</TextArea>
+		</View>
+	</Window>
+</Alloy>

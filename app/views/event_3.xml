@@ -1,0 +1,26 @@
+<Alloy>
+	<Window class="container">
+		 <AlertDialog id="dialog" title="Enter adjective"
+            cancel="1" platform="android">
+			<View platform="android">
+	            <TextField id="android_adjective_textfield" ></TextField>
+	        </View>
+            <!-- The ButtonNames tag sets the buttonNames property. -->
+            <ButtonNames>
+                <ButtonName>OK</ButtonName>
+                <ButtonName>Cancel</ButtonName>
+            </ButtonNames>
+        </AlertDialog>
+		<View class="header">
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class="questionLabel" id="questionLabel" 
+				text="How would you describe yourself after this experience?" ></Label>
+		</View>
+		<View class="bottom_view">
+			<TextField id="search_textfield" hintText="Search..."></TextField>
+			<View class="trait_view" id="trait_view">
+				<Button class="trait_button" id="add_trait_button" title="Add trait"/>
+			</View>
+		</View>
+	</Window>
+</Alloy>

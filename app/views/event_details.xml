@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container">
+		<View class="header" id='event_details_header'>
+			<Button id="previousPageButton" class="topLeftButton headerButton" title="Back"/>
+			<Label class='questionLabel' id="emotionLabel" text="Emotion name"></Label>
+		</View>
+		<View class="emotion_view bottom_view" id="emotion_view">
+			<TableView id="details_view">
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

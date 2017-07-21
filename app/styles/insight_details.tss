@@ -1,0 +1,22 @@
+".container": {
+    backgroundColor: "white",
+    layout:'vertical',
+},
+".header": {
+	backgroundImage:"/img/emotion_selected/02_Happy.jpg",
+},
+
+".bottom_view":{
+	layout:'vertical',
+	top:0,
+},
+
+"#dateLabel":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE
+},
+
+"#insightLabel":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE
+}

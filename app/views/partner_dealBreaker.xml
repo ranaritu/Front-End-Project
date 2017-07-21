@@ -1,0 +1,15 @@
+<Alloy>
+   <Window class="container" statusBarStyle= "Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT">
+	
+		<View class ="happy">
+			<Label id = "question" class = "profileQuestions" text="What are his deal breakers?" ></Label>
+		</View>
+		
+		<View id = "textView">   
+			<TextArea id ="textArea" > </TextArea>
+			 <Button id ="next_button" class = "next"> Next</Button>
+			<Button id ="exit_button" class = "topRightButton headerButton"> Done</Button>
+			<Button id ="back_button" class = "back"> Back</Button>
+		</View>
+	</Window>
+</Alloy>

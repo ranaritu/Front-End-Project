@@ -1,0 +1,46 @@
+
+".container" : {
+  
+}
+".header" : {
+	backgroundImage:"/img/add_event/01_Upset.jpg",
+}
+
+"#search_textfield":{
+	borderRadius:0,
+	borderColor:'white',
+	backgroundColor:"#f1f1f0",
+	width:Ti.UI.FILL,
+	top:0,
+	height:"50dp"
+}
+"TextField":{
+	borderWidth:2,
+	borderColor:'#bbb',
+	borderRadius:5,
+	width:Ti.UI.FILL,
+	top:0,
+	height:Ti.UI.SIZE
+}
+".bottom_view":{
+	backgroundColor:"white"
+}
+"#event_reason_textarea":{
+	bottom:0,
+}
+".trait_view":{
+	layout:"horizontal",
+	height:Ti.UI.SIZE,
+	top:"15%",
+}
+".trait_button":{
+	left:"4%",
+	borderWidth:1,
+	borderColor: '#bbb',
+	width:"80dp",
+	height:"80dp",
+	top:"4%",
+	backgroundImage:"/img/add_event/01_Upset.jpg",
+	color:"white"
+}
+

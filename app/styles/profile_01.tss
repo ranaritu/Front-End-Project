@@ -1,0 +1,27 @@
+
+"#question1":{
+	top:30,
+}
+
+"#name":{
+	top:80,
+	height:35,
+}
+
+"#question2":{
+	top:130,
+}
+
+"#age":{
+	top:180,
+	height:35,
+}
+
+"#question3":{
+	top:230,
+}
+
+"#relation":{
+	top:290,
+	height:35,
+}

@@ -1,0 +1,86 @@
+"#scrollview":{
+	showVerticalScrollIndicator:"true",
+	showHorizontalScrollIndicator:"true"
+},
+
+"#button_view":{
+	layout:'horizontal',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	//backgroundImage:"/img/event_screens/Resolved.jpg",	
+},
+
+".resolution_button":{
+	layout:'horizontal',
+	height:Ti.UI.SIZE,
+	width:100,
+	left: 10,
+	color:"white",
+	backgroundColor: "#797873",
+},
+
+".solved_button":{
+	
+}
+".unsolved_button":{
+},
+
+".button_wrapper_view":{
+	layout:'horizontal',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+}
+
+".header":{
+	backgroundColor:"black",
+	height:"50dp",
+}
+"#back_button":{
+	left:20,
+	backgroundImage:"/img/icons/back-arrow.png",	
+	width:24,
+	height:24,
+	//backgroundColor:"transparent",
+}
+
+".bottom_view":{
+	layout:'vertical',
+	top:55,
+	bottom:0,
+},
+
+
+".lineView" : {
+	layout:'horizontal',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.FILL,
+	left:10,
+	right:10,
+},
+".dataTitleLabel":{
+	left:0,
+	//color:"#AA0E3F",
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	font: {
+        fontWeight:'bold',
+        fontSize:14,
+        fontFamily:"Muli",
+    },
+},
+".dataLabel":{
+	left:0,
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	font: {
+		
+        fontSize:14,
+		fontFamily:"Avenir"
+    },
+},
+
+"#details_view":{
+	layout:'vertical',
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE
+}
